@@ -31,6 +31,21 @@ body {
 a {
   text-decoration: none;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.break-all {
+  word-break: break-all;
+}
 .header {
   background-color: #fffcf4;
 }
@@ -278,16 +293,18 @@ nav li.active a {
   display: flex;
   gap: 30px;
 }
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+  flex: 1;
+}
 .popular .course-item .thumb {
   width: 100%;
   border-radius: 12px 12px 0px 0px;
   height: 278px;
 }
-.popular .course-item {
-  border-radius: 12px;
-  border: 1px solid #e2dfda;
-  background: #fff;
-}
+
 .popular .course-item:hover {
   border: 1px solid transparent;
   border-radius: 12px;
