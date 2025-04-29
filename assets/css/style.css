@@ -362,9 +362,14 @@ nav li.active a {
   background-color: #2e2100;
   padding: 96px 0;
 }
+.feedback .feedback-list {
+  display: flex;
+  overflow: hidden;
+}
 .feedback .feedback-item {
   display: flex;
-  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
 }
 .feedback .feedback-item .info .avt {
   border-radius: 50%;
@@ -404,6 +409,7 @@ nav li.active a {
 }
 .feedback-item .content {
   width: 66%;
+  margin-left: auto;
 }
 .feedback-item blockquote {
   color: #fff;
