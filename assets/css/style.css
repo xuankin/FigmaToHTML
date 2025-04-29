@@ -356,3 +356,59 @@ nav li.active a {
   border-radius: 25px;
   background: #ffb900;
 }
+/* ========= feedback========= */
+.feedback {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 96px 0;
+}
+.feedback .feedback-item {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback .feedback-item .info .avt {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
+}
+.feedback-item .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+.feedback-item .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback-item .dots .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+.feedback-item .content {
+  width: 66%;
+}
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.53; /* 153.846% */
+}
